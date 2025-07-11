@@ -8644,7 +8644,7 @@
 "origin" "1360 448 88"
 "angle" "270"
 "targetname" "fs06"
-"spawnflags" "1024"
+"spawnflags" "768"
 }
 // entity 146
 {
@@ -16169,7 +16169,7 @@
 "origin" "1368 448 88"
 "angle" "270"
 "targetname" "fs06"
-"spawnflags" "768"
+"spawnflags" "1024"
 }
 // entity 695
 {
