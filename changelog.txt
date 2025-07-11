@@ -1,0 +1,434 @@
+Alkaline devkit v1.2.3b
+-----------------------
+
+Changes since v1.2.3:
+
+Additions
+-----------
+
+- Added "non-solid" flag to func_door;
+- Added "no stop sound" flag to func_door;
+- Added sound source options to play_sound_triggered;
+- Added "distance" key to buttons - sets a movement distance directly instead of dealing with lip;
+- Added target_changelevel point entity;
+
+
+Corrections
+-----------
+
+- Switchable shadows on func_wall now render correctly;
+- Fixed jump pad height when entity's gravity isn't 1 or 0;
+- Readded missing boom sound to Lightning Gun;
+- Improved invisible state toggling via target_setstate;
+- Improved func_wall texture toggling via target_setstate;
+- Fixed one-off issues in alk_derelict.
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2.3
+-----------------------
+
+Changes since v1.2.2e:
+
+Additions
+-----------
+
+- New entity trigger_random, as the name implies can fire entities at random;
+- New entity trigger_mirror, creates a visual reflection of all entities inside it in the direction you
+  specify;
+- Nailgun spikes travel at twice the speed now;
+- Reduced axe hit lag;
+- Monsters fire path_corner/path_angry targets when they pass through;
+- Enabling godmode while dead resurrects player;
+- Player won't touch triggers nor items when you have noclip + notarget on;
+
+
+Corrections
+-----------
+
+- Revamped weapons animation and management code. Should be way less buggy and have more consistent speeds
+  across different server framerates;
+- New SNG viewmodel with smoother animation;
+- Fixed fast zombie spawner spawning death knights;
+- Fixed potential weirdness in particle density;
+- Fixed proximity grenade ammo usage.
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2.2e
+-----------------------
+
+Changes since v1.2.2d:
+
+Corrections
+-----------
+
+- Fixed mapvars not changing on trigger_changelevel when the "no intermission" flag was on;
+- Fixed alk_derelict requiring a silver key for some buttons in the map;
+- Fixed view_ofs for triggers not behaving correctly if angle was outside -/+180deg;
+- Instadestination force-drop hack can be disabled now;
+- Fixed weird debug message on teleports;
+- Misc FGD fixes and improvements.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2.2d
+-----------------------
+
+Changes since v1.2.2b:
+
+Additions
+-----------
+
+- New target_heal entity - it actually already existed in code but my dumb self forgot to add it to the FGD;
+- Added "view_ofs" field to trigger_once and trigger_multiple - customizable view cone for when you have an
+  angle set on a trigger;
+- Added "tunnel center" flag to trigger_push, similar to Copper's;
+- Added "count" key to trigger_multiple, to limit the maximum amount of firings;
+
+
+Corrections
+-----------
+
+- Instateleport transitions should be more stable, less jumpy, and less prone to make players stuck on geo;
+- Fixed a bug with instateleports that could cause entity overflow;
+- Misc FGD description fixes.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2.2b
+-----------------------
+
+Changes since v1.2.2:
+
+Corrections
+-----------
+
+- Fixed skill changing on its own when loading a save;
+- Greatly reduced view jump when passing through seamless teleports at oblique angles;
+- Fixed killtargeted monsters and bosses not counting towards total kill count sometimes;
+- Misc docs and FGD description fixes.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2.2
+----------------------
+
+Changes since v1.2.1:
+
+
+Additions
+---------
+
+- Monster autojump - by default all melee-only monsters are able to automatically jump down ledges
+  and across small gaps to chase the player. It also can be activated per-entity on most walking monsters
+  from other classes;
+- New Kamikaze Grunt - you can shoot his body to put him down without blowing the box, or aim towards the
+  explosive for an instant boom;
+- New jump pads - set a point entity as destination and players and monsters will be thrown exactly at it;
+- Shotgun shots now pierce dying monsters, similar to Copper;
+- Shotgun pellets are center-biased - their spread is more concentrated at the center of the shot;
+- New skin for the fast zombies;
+- Ported func_bobbing entity from Copper (old func_bob is deprecated but will still work on existing maps).
+  Also misc_bobbing replaces old misc_bob for MDLs;
+- Added button grouping - when you push a button, all others with the same groupname key get released;
+- Added "not in coop/only in coop" spawnflags to all entities;
+- Entities can now have an "invisible" state;
+- More trigger_monsterjump features from Copper;
+- New target_setskill entity, same as trigger_setskill but as a targetable point entity;
+- Changed intermission camera cycling to mouse wheel;
+- New wood style for func_breakable;
+- Selectable bolt style in misc_lightning (player's LG/Shambler/Chthon);
+- Added "all players" flag to target_removeitems;
+- trigger_repeat can have a first-fire delay;
+- func_shadow doesn't require a misc_shadowcontroller for switchable shadows anymore and can be toggled
+  directly;
+- Changed Spawn's classname to "monster_spawn". The original classname still works on existing maps,
+  but it's been deprecated and removed from the FGD.
+
+
+Corrections
+-----------
+
+- Picking up ammo doesn't break weapon firing animations anymore;
+- Fixed Fiend's instakill when landing on the player's head;
+- Fixed water sound bug in Kex;
+- Fixed skill changes on current map not being restored after loading a save;
+- Fixed silent textstory trying to play empty sound;
+- Fixed nails' bulletholes not sticking on horizontal surfaces;
+- Corrected small bugs and weirdnesses in backpacks.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2.1
+----------------------
+
+Changes since v1.2:
+
+
+Additions
+---------
+
+- New Platinum key (item_key3);
+- New alternate custom HUD layout
+  - Press H to cycle, or "cyclehud" on console;
+  - Current HUD selection gets saved to cfg file so it persists across game sessions;
+- Jump boots level is now shown on the HUD;
+- Buttons can now require keys;
+- New misc_drip entity, decorative water drips;
+- New Mechavore sounds;
+- New "start upright" flag in spiderbots;
+- New func_wall spawnflag that syncs frame animation to the "light flicker" lightstyle;
+- Trigger spawning monsters can have a random delay;
+- Added inertia from movers (jumping off of a moving platform adds to your velocity);
+- Chthon changes:
+  - Fixed shootable Chthon not behaving correctly when you fire up the lightning posts;
+  - Can be forced to non-shootable;
+  - monster_boss be retriggered directly to go through phases instead of only accepting the crazy event_lightning setup;
+- Resurrect cheat now gives 5s invulnerability;
+- giveall (impulse 9) cheat doesn't give keys anymore;
+- New givekeys cheat;
+
+
+Corrections
+-----------
+
+- Fixed lightning gun going boom while on ladders;
+- Fixed Megaenforcer explosion pain behavior, should consistently drop shields now;
+- Fixed liquidbrush doors with wait -1 not staying in place;
+- Fixed rare bug with player going into zombie state when health is ~0;
+- Fixed double doors not toggling correctly with target_setstate via targetname2;
+- Fixed colorshift not clearing on coop/DM respawn;
+- Fixed player face pain not showing on custom HUD in some ports;
+- Fixed borked LG shaft end segment;
+- Fixed misc_teleporttrain to behave like it should've been (spins and causes no random crashes).
+- Removed deprecated spawnflag 1 on func_train (should break Rubicon2 compatibility unfortunately but that's life).
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Alkaline devkit v1.2
+----------------------
+
+Changes since v1.1.2:
+
+Additions
+---------
+
+- Proximity launcher now fires cluster grenades;
+- Added dynamic water - add a 'liquidbrush 1' field to any solid brush to turn it into water (trains, doors, plats);
+- Changes to Mega Enforcer:
+  - Explosions hit them even when shields are up, dealing only 20% damage, but breaking the shields down and sending them into a pain state;
+  - Grenades don't bounce off of them anymore;
+- New monster_turret - a ceiling-positioned motion-tracking cannon;
+- New monster_zombie2 - Fast Zombies from ne_ruins
+- New Mecha Vore;
+- Alternate custom HUD layout, Ironwail-inspired;
+- New Platinum key;
+- Added instant teleports;
+- Added func_touchplate/trigger_touchplate;
+- Added eased out movement to trains, doors and plats;
+- Fishes changed to RRP version - smaller and weaker, but a lot faster;
+- Downed zombies can be gibbed with splash damage;
+- Added wake trigger for monsters;
+- Added directional gibs that fly depending on damage origin - quad runs got a lot more fun :)
+- Added bullet tracer effect to hitscan shots;
+- Improved visuals in the player's lightning bolt;
+- Added pain skins for original version monsters (Death Knight, Knight, Fiend, Ogre, Vore);
+- New trigger_float entity: makes things floaty;
+- New misc_flame fire-emmiting entity;
+- Zombies have a "start down" spawnflag option;
+- Remade physics for func_ladder - you can now move in the direction your're looking at;
+- New target_heal entity (experimental);
+- New advanced features to trigger_relay:
+  - Fire automatically on map start
+  - Maximum usage count
+  - Wait timer before it can be fired again
+  - "Not in Nightmare" flag
+  - "Player only" flag
+  - "Make sure activator is a player" flag
+- Added "reset" flag to trigger_counter, and more count messages (up to 5);
+- Continuous trap_shooter can be toggled on/off directly;
+- Jump boots add some fall damage resistance;
+- Intermission camera points can be cycled with the attack button;
+- Optimized models/animations for all player weapons;
+- New Ogre Marksman model (by fairweather) and sounds (by Markie);
+- New Axe Grunt model (by fairweather);
+- New explosion sprite animations;
+- New axegrunt sounds;
+- Better documentation on rotators in the FGD;
+- Auto-monsterjumps setable directly on monsters;
+- target_move can get the activating entity instead of only a fixed target (works effectively as a simplified teleporter);
+- trigger_textstory now gets a background fade by default (opt-in for target_textstory);
+- Added optional teleport fog to target_move (useful to teleport out only a specific entity);
+- New func_fade brush entity, fades smoothly in/out depending on player distance or over a defined time;
+- New skybox trigger entity (target_skybox);
+- Picked up ammo boxes now show the actual amount of ammo gained;
+- Item respawning revamped:
+  - Items can be respawned on demand by triggering them (only if marked with the "ritem" field);
+  - Setting -1 on respawndelay disables automatic respawn, making it only respawnable via triggering;
+  - Custom respawn times now affect deathmatch 1 too;
+  - Pre-respawn flicker effect can be disabled;
+- Added more mapvar features:
+  - Mapvar filter can be set directly into all trigger entities;
+  - Selectable message in textstory entities according to mapvar state;
+- Added damage filters to all damageable entitites:
+  - Use a trigger_filter to directly control which entities may or not damage it;
+  - Set a damage type filter to control what attack types will hit it;
+- Added "start open" flag to func_rotate_door;
+- Added ammo fields to trigger_filter;
+- play_sound entity can be toggled on/off;
+- target_infight can now target multiple monsters;
+- Monsters can infight against stationary objects;
+- Added more misc_modeltrain features, with per path_corner animation changes;
+- Breakables can be explosion-only;
+- Original monsters and MDL item boxes can be enforced via cvars or worldspawn;
+- Improved "reveal" dev command;
+- Several FGD improvements.
+
+
+Corrections
+-----------
+
+- Axe alerts monsters only when it hits something;
+- Redid buggy Arachnofloyd animation;
+- Water monsters don't get stuck on the surface anymore;
+- Corrected jump boots not resetting their charges when onwater;
+- Corrected Laser Cannon's shot bounce angle;
+- Corrected bullet tracers going through walls sometimes;
+- Changed func_breakable to turn to non-solid right before firing its targets (makes it simpler to spawn things out of them, like items or monsters).
+- Corrected trigger_push not working without an angle set explicitly;
+- Fixed issue when trying to toggle a large amount of lights with the same targetname;
+- Fixed possible crash with bulletholes;
+- Redid Frogman's death animation;
+- Corrected zombies' projectiles firing from the wrong offset relative to their bodies;
+- Corrected grunt's fire offset point;
+- Corrected inconsistent "monster in wall" warning for trigger-spawned monsters;
+- Armors and keys fire their targets when touched even if you already have them;
+- Empty trigger_changelevel now returns to the same map instead of dropping itself out;
+- trigger_hurt affects more than one entity at a time;
+- Corrected player gasping when going out of noclip mode;
+- Corrected broken misc_teleporttrain;
+- Corrected sounds set on triggers not being played on the activator;
+- Corrected monster_turret death explosion staying static on the ground;
+- Target-locked door sounds now plays non-techy sound when worldtype isn't base;
+- Tweaked Tormentor melee attacks;
+- Armagon and Tormentor collide correctly with surrounding geometry;
+- Cyberscrag body makes a metallic "thump" when hitting the ground;
+- Changed Drone to always gib when killed by an explosion;
+- Tweaked Drone's death fall physics;
+- Improved func_fade setstate support;
+- Corrected timed boots staying after level change in some cases;
+- Corrected trigger_counter removing itself upon trigger
+- Corrected trigger_mapvar_read not firing consistently at map start;
+- Corrected trigger_mapvar_read inverted "style" field descriptions in the FGD;
+- Corrected trigger_mapvar_read trying to fire even with an invalid ID;
+- Corrected random = 0 monster init bug;
+- Corrected projectiles going through Shamblers;
+- Corrected trigger-spawned items with "don't drop to floor" spawning already dropped;
+- Corrected Drone gib models getting offset weirdly;
+- Tweaked Frogman's weird death sequence and gib threshold;
+- Corrected player pain sounds when over liquids;
+- Corrected issue with resetting itens on map change;
+- Corrected issue with monster spawners stalling;
+- Corrected Nail Gun out of ammo animation issue.
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+Alkaline devkit v1.1.2
+----------------------
+
+Changes since v1.1.1 (the first Alk1.1 devkit):
+
+
+Additions
+---------
+
+- Added flicker effect to respawning items
+- Added "Pacifist" flag to monsters (only get angry when attacked)
+- Added "monsters only" option to trigger_teleport
+- Added god mode/noclip/notarget spawnflags to info_player_start_test
+- Added looped sound support to play_sound_triggered (hacky!)
+- Added killtargeting through targetname2
+- Added "toggle" style to target_setcount (toggles the count field instead of setting or summing a value)
+- Added "reset items on map change" to trigger_changelevel (resets inventory _before_ the map changes)
+
+
+Corrections
+-----------
+
+- Improved/redone Hunter animation
+- Trigger-spawned monsters don't drop to floor before spawning in anymore
+- Corrected is_waiting key on trigger_teleport
+- Corrected megahealth double rot when picking up more than one
+- Corrected megahealth/trifecta not respawnable
+- Tweaked jump boots to not fire right after player leaving the ground
+- Corrected doubled explosion sounds
+- Corrected misc_model not rotating item models
+- Corrected crash when cycling weapons when no axe is in the inventory
+- Corrected timed boots giving infinite charges forever
+- Corrected drone's 0-size bbox
+- Corrected Plasma Gun projectile spawn origin
+- Corrected bug with sequential-fired trigger_filters
+- Other minor corrections and optimizations
+
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+Alkaline devkit v1.1.1
+----------------------
+
+Changes since v1.1
+
+
+Additions
+---------
+
+- New 20fps axe model
+- New 40fps Nailgun model
+- target_hurt, a point entity version of the trigger_hurt
+- target_startpath, sends a monster to either a path_corner or path_angry when triggered
+- New impulse code cheats to give/remove the jump boots, and direct impulses to the Grenade Launcher and axe
+- target_setsize can restore automatically the original bbox for monsters
+
+
+Corrections
+-----------
+
+- Corrected target-locked sound volume (too high ugh)
+- Changed Floyd bounding box to a smaller one
+- Corrected Floyd head gib skin
+- Corrected SNG spindown animation interrupted by item pickups
+- Improved path_angry behaviour on certain monsters
+- Corrected edge case when monsters get activated infinitely after player dies
+- Corrected edge case with doors crashing when activated before initial setup is finished
+- Other minor corrections
