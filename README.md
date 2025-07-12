@@ -4,6 +4,7 @@ or in summary : Quake level for Alkaline mod.
 
 devkit link: [https://github.com/fabiolimamp/alkaline/releases/tag/1.2.3](https://github.com/fabiolimamp/alkaline/releases/tag/1.2.3b)
 
+TO PLAY: Drop the folder in your sourceport of preference... that's it... have fun!
 
 ### Author info / Metadata
 Start map : Chumastic Hub
@@ -23,6 +24,10 @@ Track 05 : Suspenseful Thoughts - Blood Instinct.
 Tracks made by the band Blood Instinct (my band, hello):
 https://soundcloud.com/blood-instinct-72
 https://blood-instinct.bandcamp.com
+
+Tools used in music : FL Studio (FLEX, Sytrus) 
+
+Instruments : Synth and Drums.
 
 
 ### General Information / Behind the scenes.
@@ -44,10 +49,13 @@ I know it's an over-explanation of a stupid joke, but i decided to leave the par
 
 Part of the spirit of this tale is in this map, a remake / soft-reboot that has nothing to do with it's original work, now in Alkaline. (ba dum tss) (snare snare cymbal)
 
-The music
+The music is Detonation by Dragonfly from TNT Evilution midi pack, Greenwood didn't use the original MIDI-mp3 of the original song (Sadistic) in his video, i didn't like any cover of "Sadistic" online,
+And i didn't find any "Detonation" cover that i liked so i did some music production... As i've been doing MIDI/Covers/Remasters with FL Studio, a good opportunity to do so. Not much else to say from the Music production, i loved working with the guitar.
+
+in this map i used a small change to work on my neon lights, thanks to bmFbr/Fabio, i used -surflight_radiosity 1  in the Light parameters... Hoping my AESTHETIC style keeps growing and improving over projects.
 
 
-Greenwood's gameplay
+
 
 
 ### Special thanks
