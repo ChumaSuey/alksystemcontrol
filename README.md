@@ -10,8 +10,10 @@ TO PLAY: Drop the folder in your sourceport of preference... that's it... have f
 Start map : Chumastic Hub
 Filename : start.bsp
 
+
 Map: The System Control
 Filename : alksystemcontrol.bsp
+
 
 Songs used: 
 
@@ -38,23 +40,31 @@ Long story short, the map was per se never lit, for a while i debated myself if 
 the sum of factors were simple : the lack of lighting, Greenwood's gameplay with it in Alkaline mod and some of my love of converting Doom maps in Quake.
 While this practice has been on-going since the 90s and i had a frozen project that were Quakefying some Doom maps i decided to start remaking System control.
 
+
 While i wanted to write it more as a joke i'll give a bit of context.
 
-Superman film (2025 film) was released July 11 2025 directed by James Gunn, previously he directed "The Suicide Squad" (2021) when DC/Warner offered him a role to direct a film after he was laid off from Marvel.
+
+Superman film (2025 film) was released July 11 2025 directed by James Gunn (watch it, it's pretty good), previously he directed "The Suicide Squad" (2021) when DC/Warner offered him a role to direct a film after he was laid off from Marvel.
 The small story that basically is a joke was that the title of the film was "The Suicide Squad" because someone proposed it and it stuck (a DC producer probably), while in the DCEU (or DC cinematic universe of the time)
 There was already a "Suicide Squad" (2016) film regardless, but sometimes the jokes become more than memes and they live or something.
 I do love superhero movies, and while it sounds like a joke, and after trying a lot of names... i just went with "The System Control"
 
+
 I know it's an over-explanation of a stupid joke, but i decided to leave the paragraph of my love of Superheroe movies / Cinematic Universes / DC (in this case).
 
+
 Part of the spirit of this tale is in this map, a remake / soft-reboot that has nothing to do with it's original work, now in Alkaline. (ba dum tss) (snare snare cymbal)
+
 
 The music is Detonation by Dragonfly from TNT Evilution midi pack, Greenwood didn't use the original MIDI-mp3 of the original song (Sadistic) in his video, i didn't like any cover of "Sadistic" online,
 And i didn't find any "Detonation" cover that i liked so i did some music production... As i've been doing MIDI/Covers/Remasters with FL Studio, a good opportunity to do so.
 
+
 in this map i used a small change to work on my neon lights, thanks to bmFbr/Fabio, i used -surflight_radiosity 1  in the Light parameters... Hoping my AESTHETIC style keeps growing and improving over projects.
 
+
 Hope you enjoy my map, best wishes to all of you, your friends and family.
+
 
 Shine with style! Excelsior!
 
