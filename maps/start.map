@@ -1244,3 +1244,9 @@
 "targetname" "t_ssnh"
 "message" "Nightmare skill selected."
 }
+// entity 45
+{
+"classname" "info_intermission"
+"origin" "-43 -1175 56"
+"mangle" "3 261 0"
+}
