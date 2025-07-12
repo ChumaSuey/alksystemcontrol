@@ -50,11 +50,13 @@ I know it's an over-explanation of a stupid joke, but i decided to leave the par
 Part of the spirit of this tale is in this map, a remake / soft-reboot that has nothing to do with it's original work, now in Alkaline. (ba dum tss) (snare snare cymbal)
 
 The music is Detonation by Dragonfly from TNT Evilution midi pack, Greenwood didn't use the original MIDI-mp3 of the original song (Sadistic) in his video, i didn't like any cover of "Sadistic" online,
-And i didn't find any "Detonation" cover that i liked so i did some music production... As i've been doing MIDI/Covers/Remasters with FL Studio, a good opportunity to do so. Not much else to say from the Music production, i loved working with the guitar.
+And i didn't find any "Detonation" cover that i liked so i did some music production... As i've been doing MIDI/Covers/Remasters with FL Studio, a good opportunity to do so.
 
 in this map i used a small change to work on my neon lights, thanks to bmFbr/Fabio, i used -surflight_radiosity 1  in the Light parameters... Hoping my AESTHETIC style keeps growing and improving over projects.
 
+Hope you enjoy my map, best wishes to all of you, your friends and family.
 
+Shine with style! Excelsior!
 
 
 
@@ -88,6 +90,7 @@ A special tribute mention to my friend Meowgi from the Doom Community for helpin
 - Tatsu91.
 - Meowgi.
 - rabbit.
+- Bloo.
 - Makkon.
 - Mikolah.
 - RecycledOJ.
@@ -95,7 +98,7 @@ A special tribute mention to my friend Meowgi from the Doom Community for helpin
 - Quake Mapping Discord.
 - Pacifist Paradise.
 - David’s Shack server.
-- Quake music club friends (Immorpher, kegerat0r, Proxy-MIDI)
+- Quake music club friends (Immorpher, kegerat0r, Proxy-MIDI, Magnetbox, DevSEb)
 - Map-Center.
 - NyxGirlpower’s community.
 - Skillmaster and my friends Ekate, Boris_sdk and Fellow.
