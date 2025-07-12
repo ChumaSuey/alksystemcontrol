@@ -27,7 +27,9 @@ Tracks made by the band Blood Instinct (my band, hello):
 https://soundcloud.com/blood-instinct-72
 https://blood-instinct.bandcamp.com
 
+
 Tools used in music : FL Studio (FLEX, Sytrus) 
+
 
 Instruments : Synth and Drums.
 
@@ -35,6 +37,7 @@ Instruments : Synth and Drums.
 ### General Information / Behind the scenes.
 
 Going back in history, i've made this map already: https://www.slipseer.com/index.php?resources/system-control-doom-tnt-map-01-quake-remake.252/
+
 
 Long story short, the map was per se never lit, for a while i debated myself if i let it be or not... i decided as a small side project just to remake this map,
 the sum of factors were simple : the lack of lighting, Greenwood's gameplay with it in Alkaline mod and some of my love of converting Doom maps in Quake.
