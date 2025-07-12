@@ -1,64 +1,53 @@
-# Zero Minus One - antig_chuma
-Quake map for Alkaline mod, for Antigravity jam.
+# The System Control
+Quake mod for Alkaline devkit 1.2.3b.
+or in summary : Quake level for Alkaline mod.
 
-devkit link: https://github.com/fabiolimamp/alkaline/releases/tag/1.2.3
+devkit link: [https://github.com/fabiolimamp/alkaline/releases/tag/1.2.3](https://github.com/fabiolimamp/alkaline/releases/tag/1.2.3b)
 
 
 ### Author info / Metadata
+Start map : Chumastic Hub
+Filename : start.bsp
 
-Map name: Zero Minus One
-
-Author : Chuma
-
-Mod : Alkaline
-
-bsp filename: antig_chuma.bsp
+Map: The System Control
+Filename : alksystemcontrol.bsp
 
 Songs used: 
 
-Track 27 : Ghost Machines - Blood Instinct.
+Track 04 : Detonation (by Dragonfly) - Blood Instinct (original song from TNT midi pack remastered by me / Blood Instinct)
 
 
-Track 28 : Warning Intruder Alert 0057 - Blood Instinct.
-
-
-Track 29 : Echoes of the Desert Machines - Blood Instinct.
+Track 05 : Suspenseful Thoughts - Blood Instinct.
 
 
 Tracks made by the band Blood Instinct (my band, hello):
-
-
-tracks will be uploaded in soundcloud : https://soundcloud.com/blood-instinct-72
+https://soundcloud.com/blood-instinct-72
+https://blood-instinct.bandcamp.com
 
 
 ### General Information / Behind the scenes.
 
-This map was an experience to do, Jam started when i was traveling with my family, i didn't have stable internet only from mobile data and my computer was also used by my family in some inquiries.
+Going back in history, i've made this map already: https://www.slipseer.com/index.php?resources/system-control-doom-tnt-map-01-quake-remake.252/
 
-During vacations i did a small playtest room and thanks to the deadline extension (or else i couldn't have finished it) i started working my way on finishing the map... It's a chumastic Alkaline map with a serious theme/tone.
+Long story short, the map was per se never lit, for a while i debated myself if i let it be or not... i decided as a small side project just to remake this map,
+the sum of factors were simple : the lack of lighting, Greenwood's gameplay with it in Alkaline mod and some of my love of converting Doom maps in Quake.
+While this practice has been on-going since the 90s and i had a frozen project that were Quakefying some Doom maps i decided to start remaking System control.
 
-I've used most of the anti gravity features for the map, the climax room where gravity was high was a suggestion of Shark, i had no idea what i was going to do with it, so it came at the right time to implement.
+While i wanted to write it more as a joke i'll give a bit of context.
 
-The original idea for the map was a map in the middle of space, a space station where you would jump from certain parts to another, and the keys would spawn randomly with trigger_random.
+Superman film (2025 film) was released July 11 2025 directed by James Gunn, previously he directed "The Suicide Squad" (2021) when DC/Warner offered him a role to direct a film after he was laid off from Marvel.
+The small story that basically is a joke was that the title of the film was "The Suicide Squad" because someone proposed it and it stuck (a DC producer probably), while in the DCEU (or DC cinematic universe of the time)
+There was already a "Suicide Squad" (2016) film regardless, but sometimes the jokes become more than memes and they live or something.
+I do love superhero movies, and while it sounds like a joke, and after trying a lot of names... i just went with "The System Control"
 
-The trigger_random was used in a couple of parts in the map: the weapons in the beginning and PU secret.
+I know it's an over-explanation of a stupid joke, but i decided to leave the paragraph of my love of Superheroe movies / Cinematic Universes / DC (in this case).
 
-The PU secret thanks to Fabio's help actually is triggered with an action rather than crossing it, this was one of my favorite things in the map.
+Part of the spirit of this tale is in this map, a remake / soft-reboot that has nothing to do with it's original work, now in Alkaline. (ba dum tss) (snare snare cymbal)
 
-I thank Mopey for motivating me to include Difficulty balance, like i usually did : Easy/Normal - Hard/Nightmare are how my maps are usually balanced, one thing to say is that i always map for Nightmare as default, so Hard/NM is recommended.
-
-I thank OJ for giving me feedback on how to use func_lasers to delimit some parts that have player clips, it was a very creative idea that helped a lot for the environment of the map.
-
-The idea was changed so i could do something cool and stable in less time, i liked how the map came to be.
-
-It has textures from Quake 1 (mg1.wad) , Quake 2 (q2tex00.wad) and quake 3 (q3a_sm204.wad).
-
-I thank Fabio (bmFbr) for the extension and helping me out on the map, Alkaline is my favorite Quake mod of all time <3.
-
-Enjoy my map, Excelsior!
+The music
 
 
-Best vibes and high fives for all of you!
+Greenwood's gameplay
 
 
 ### Special thanks
@@ -67,8 +56,9 @@ A special shoutout to Ribbiks and dannebubinga for making Sunlust (Doom wad) as 
 
 A special tribute mention to my friend Meowgi from the Doom Community for helping me for mapping into doom, leading Pacifist Paradise community and never stopped believing in me.  <3
 
-Thanks to my best friends Yuyi and Alunadrern for giving out the color values for the Sky and FOG <3.
 
+- Yuyi
+- Alunadrern
 - bmFbr.
 - Paril.
 - CommonCold.
